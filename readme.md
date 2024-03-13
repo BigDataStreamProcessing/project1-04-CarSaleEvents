@@ -4,7 +4,7 @@ W ramach wielu komisów samochodowych na całym świecie rejestrowane są dane d
 W strumieniu pojawiają się zdarzenia zgodne ze schematem `CarSaleEvent`.
 
 ```
-create json schema CarSaleEvent(brand string, year int,
+create json schema CarSaleEvent(brand string, `year` int,
 mileage int, price int, ets string, its string)
 ```
 
