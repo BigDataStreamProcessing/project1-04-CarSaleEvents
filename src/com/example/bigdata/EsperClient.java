@@ -105,7 +105,7 @@ public class EsperClient {
                     @public @buseventtype create json schema CarSaleEvent(brand string, `year` int,
                     mileage int, price int, ets string, its string);
 
-                    @name('result') SELECT brand, price, mileage, `year`, ets, its
+                    @name('answer') SELECT brand, price, mileage, `year`, ets, its
                     FROM CarSaleEvent#ext_timed(java.sql.Timestamp.valueOf(its).getTime(), 3 sec)
                     """, compilerArgs);
         }
